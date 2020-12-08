@@ -316,7 +316,6 @@ public class GIAODIEN extends javax.swing.JFrame {
     }//GEN-LAST:event_btnLamBaiActionPerformed
 
     private void btnPrevActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPrevActionPerformed
-       
         dem--;
         if(dem == -1) dem = 19;
         int count = dem + 1;
@@ -335,8 +334,6 @@ public class GIAODIEN extends javax.swing.JFrame {
     }//GEN-LAST:event_btnPrevActionPerformed
     
     private void btnNextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNextActionPerformed
-        if(btnLamBai.isEnabled()) btnLamBai.setEnabled(false);
-        
         dem++;
         if(dem==20) dem =0;
         int count = dem + 1;
@@ -370,15 +367,14 @@ public class GIAODIEN extends javax.swing.JFrame {
         float point = 1.0f;
         final float hesoPoint = 0.5f;
         int pos=0; 
+        try {
         int length = listWh.size();
         char dapAnUser;
         char dapAnDung;
         dtm = (DefaultTableModel) tbView.getModel();
-        dtm.setNumRows(0);
-        vt.removeAllElements();
-        try {
+        
             for(int i=0;i<length;i++){
-                pos = listAns.Search(listWh.get(i).getId_wh());
+                  pos = listAns.Search(listWh.get(i).getId_wh());
                 if(pos != -1) {
                     dapAnUser = listWh.get(i).getDapAnUser().getText().charAt(0);
                     dapAnDung = listAns.getListDapAn().get(pos).getDapAnDung().charAt(0);
@@ -393,15 +389,14 @@ public class GIAODIEN extends javax.swing.JFrame {
                     }
                 }
             }
-            tbView.setModel(dtm);
+            if(vt.size() > 0) tbView.setModel(dtm);
             
-        } catch (StringIndexOutOfBoundsException ex) {
+        } catch (NullPointerException | StringIndexOutOfBoundsException ex1) {
         }
         return point-1.0f;
     }
     private void btnNopBaiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNopBaiActionPerformed
-              float diem = sumPoint();
-              tbView.setVisible(true);
+            float diem = sumPoint();
               JOptionPane.showMessageDialog(rootPane,  "Số Điểm Của Bạn Là: "+diem+"");
               int check = JOptionPane.showConfirmDialog(rootPane, "THI LAI");
               if(check == JOptionPane.YES_OPTION) {
