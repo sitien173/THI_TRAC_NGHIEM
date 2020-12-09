@@ -1,0 +1,875 @@
+1. Chữ kí của hệ điều hành Windows là?
+a. 11BB
+b. AB54
+c. 14AD
+d. 55AA
+2. Kích thước Cluster có thể thay đổi?
+a. Sai
+b. Đúng
+c. 
+d. 
+3. Kích thước của một phần tử Root là?
+a. 32B
+b. 64B
+c. 48B
+d. 16B
+4. Sự khác nhau giữa FAT12, FAT16, FAT32 là?
+a. Kích thước của phần tử FAT
+c. Kích thước của cluster.
+b. Kích thước của đĩa
+d. Kích thước lớn nhất có thể quản lí.
+5. Kích thước để quản lí một phân vùng chính trong Master Boot là?
+a. 16B
+b. 32B
+c. 128B
+d. 64B
+6. Theo chuẩn IDE, trên track thường có bao nhiêu sector?
+a. 127
+b. 63
+c. 15
+d. 31
+7. Lưu trữ thông tin về danh sách các cluster của file là?
+a. Cluster Table
+b. Root
+c. Data area
+d. FAT
+8. Lưu trữ thông tin về các phân vùng chính là?
+a. Root
+b. Master Boot
+c. Boot Sector
+d. Sector Boot
+9. Để đọc dữ liệu của file thì thứ tự truy nhập là?
+a. Fat-Data
+b. Root-Data
+c. Root-Fat-Data
+d. Fat-Root-Data
+10. Số lượng phần tử của Root được lưu trữ ở?
+a. Data area
+b. Fat
+c. Root
+d. Boot Sector
+11. Kích thước một phần tử trong FAT32 là?
+a. 16B
+b. 32B
+c. 32b
+d. 16b
+12. Hệ thống quản lí file bao gồm hệ thống truy nhập mức logic và hệ thống truy nhập mức vật lý??
+a. Đúng
+b. Sai
+c. Cả 2 Đúng
+d. Cả 2 Sai
+13. Chức năng chính của hệ điều hành?
+a. Quản lí tài nguyên và giúp cho người sử dụng khai thác chức năng của phần cứng máy tính dễ dàng hơn, hiệu quả hơn.
+b. Khai thác chức năng của phần cứng máy tính.
+c. Điều hành hệ thống và giúp cho người sử dụng khai thác chức năng của phần cứng máy tính dễ dàng hơn, hiệu quả hơn.
+d. Quản lí bộ nhớ, quản lí tập tin, quản lí tiến trình.
+14. Tiến trình (process) là gì?
+a. Chương trình lưu trong đĩa
+c. Chương trình đang thực hiện
+b. Chương trình
+d. Cả 3 đều sai.
+15. Tuyến (thread) là gì?
+a. Đơn vị xử lí cơ bản của hệ thống, bao gồm mã code, con trỏ lệnh, tập các thanh ghi và stack.
+b. Đơn vị chương trình của tiến trình bao gồm mã code.
+c. Là thành phần của tiến trình xử lí mã code của tiến trình
+d. Cả 3 đáp án đều đúng.
+16. Phương pháp dự báo và tránh tắc nghẽn thường được áp dụng với hệ thống có đặc điểm nào?
+a. Xác suất xảy ra tắc nghẽn lớn, tổn thất do tắc nghẽn gây nên lớn.
+b. Xác suất xảy ra tắc nghẽn nhỏ, tổn thất do tắc nghẽn gây nên lớn.
+c. Xác suất xảy ra tắc nghẽn lớn, tổn thất do tắc nghẽn gây nên nhỏ.
+d. Xác suất xảy ra tắc nghẽn nhỏ, tổn thất do tắc nghẽn gây nên nhỏ.
+17. Hệ điều hành là gì?
+a. Là hệ thống chương trình với các chức năng giám sát, điều khiển việc thực hiện của các chương trình, quản lí và phân chia tài nguyên sao cho việc khai thác chức năng hệ thống hiệu quả và thuận lợi.
+b. Là một hệ thống mô hình hoá, mô phỏng hoạt động của máy tính, của người sử dụng và của lập trình viên, hoạt động trong chế độ thoại nhằm tạo môi trường khai thác thuận lợi hệ thống máy tính và quản lí tối ưu tài nguyên.
+c. Là một chương trình đóng vai trò như một giao diện giữa người sử dụng và phần cứng máy tính, điều khiển việc thực hiện của tất cả các loại chương trình.
+d. Cả 3 đáp án.
+18. Lời gọi hệ thống (system calls) là?
+a. Là môi trường giao tiếp giữa chương trình của người sử dụng và hệ điều hành.
+b. Là môi trường giao tiếp giữa phần cứng và hệ điều hành.
+c. Là môi trường giao tiếp giữa chương trình và phần cứng.
+d. Cả 3 đáp án.
+19. Thành phần nào không phải là thành phần của hệ điều hành?
+a. Chương trình quản lí truy nhập file.
+b. Chương trình điều khiển thiết bị.
+c. Chương trình lập lịch cho tiến trình.
+d. Chương trình quản lí bộ nhớ tự do.
+20. “Hệ điều hành là hệ thống chương trình bao trùm lên máy tính vật lí tạo ra máy logic với những tài nguyên và khả năng mới” là cách nhìn của?
+a. Người quản lí
+c. Người lập trình hệ thống
+b. Người sử dụng
+d. Nhà kĩ thuật
+21. Tính chất nào không phải tính chất chung của hệ điều hành?
+a. Tính thuận tiện
+c. Tính hiệu quả
+b. Tính ổn định
+d. Tính tin cậy.
+22. Trong quản lí thiết bị ngoại vi, các máy tính thế hệ thứ ba trở đi làm việc theo nguyên tắc phân cấp nào?
+a. Processor – Thiết bị ngoại vi – Thiết bị điều khiển.
+b. Processor – Thiết bị điều khiển – Thiết bị ngoại vi.
+c. Thiết bị điều khiển – Thiết bị ngoại vi – Processor.
+d. Không đáp án nào đúng.
+23. Mục tiêu nào sau đây nằm trong 5 mục tiêu chính của điều phối tiến trình?
+a. Cực tiểu hoá thời gian chờ
+c. Sự công bằng
+b. Cực tiểu hoá thời gian phản hồi
+d. Cả 3 đều sai.
+24. Phát biểu sau là của nguyên lí nào của HĐH: “Hệ điều hành được chia thành nhiều phần, các thành phần có thể ghép nối với nhau thông qua đầu vào và đầu ra”?
+a. Nguyên lí module
+c. Nguyên lí phủ chức năng.
+b. Nguyên lí Macroprocessor
+d. Nguyên lí giá trị chuẩn.
+25. Phát biểu sau là của nguyên lí nào của HĐH: “Hệ thống không bao giờ tham chiếu trực tiếp tới đối tượng vật lí”?
+a. Bảng tham số điều khiển
+c. Bảng tham số tham chiếu
+b. Giá trị chuẩn
+d. Phủ chức năng.
+26. Phát biểu sau là của nguyên lí nào của HĐH: “Mỗi công việc trong hệ thống thường có thể được thực hiện bằng nhiều cách khác nhau và bằng nhiều công cụ khác nhau”?
+a. Nguyên lí phủ chức năng
+c. Nguyên lí macroprocessor
+b. Nguyên lí giá trị chuẩn
+d. Nguyên lí bảng tham số điều khiển.
+27. Hệ điều hành có tính mở về mặt kiến trúc là hệ điều hành được xây dựng dựa trên nguyên lí nào?
+a. Nguyên lí phủ chức năng
+c. Nguyên lí giá trị chuẩn
+b. Nguyên lí module
+d. Nguyên lí Macroprocessor
+28. Trong FAT32 kích thước file lớn nhất là bao nhiêu?
+a. 16GB
+b. 2GB
+c. 8GB
+d. 4GB
+29. Một tiến trình phải có tối đa bao nhiêu luồng (thread)?
+a. 1
+b. 0
+c. 3
+d. Không xác định.
+30. Nhiệm vụ nào dưới đây không phải là nhiệm vụ của thành phần quản lí bộ nhớ?
+a. Tổ chức định vị file trong bộ nhớ
+c. Tổ chức bộ nhớ logic
+b. Tổ chức bộ nhớ vật lí
+d. Tổ chức tái định vị tiến trình.
+31. Quản lí bộ nhớ logic là quản lí tổ chức cấu trúc chương trình?
+a. Đúng
+b. Sai
+c. Cả 2 Đúng
+d. Cả 2 Sai
+32. Cấu trúc tuyến tính là một module chương trình chứa đầy đủ thông tin về chương trình?
+a. Đúng
+b. Sai
+c. 
+d. 
+33. Cấu trúc chương trình nào không thể thực hiện được việc chia sẻ dùng chung module?
+a. Cấu trúc overlay
+c. Cấu trúc module
+b. Cấu trúc phân trang
+d. Cấu trúc tuyến tính
+34. Việc phân chia module trong chương trình có cấu trúc module do cái gì thực hiện?
+a. Hệ điều hành
+c. Chương trình dịch
+b. Người lập trình
+d. Tự động.
+35. Trong cấu trúc phân trang, bảng quản lí trang được tạo ra bởi?
+a. Tự động
+c. Chương trình dịch
+b. Người lập trình
+d. Hệ điều hành.
+36. Trong kĩ thuật quản lí bộ nhớ phân vùng cố định sử dụng phương pháp nào để quản lí bộ nhớ tự do?
+a. Danh sách các vùng bộ nhớ tự do.
+c. Danh sách các vùng bộ nhớ đã cấp phát
+b. Bản đồ bitmap
+d. Cả 3 đều sai.
+37. Trong kĩ thuật quản lí bộ nhớ phân vùng động, số lượng chương trình có thể nạp vào bộ nhớ lớn nhất là?
+a. Hệ số song song
+b. Không xác định
+c. Hệ số vùng cố định
+d. Hệ số nạp
+38. Trong kĩ thuật quản lí bộ nhớ phân vùng động, cách thức quản lí bộ nhớ tự do bằng?
+a. Bản đồ bitmap
+c. Danh sách các vùng bộ nhớ đã cấp phát.
+b. Danh sách các vùng bộ nhớ tự do
+d. Cả 3 đều sai
+39. Trong kĩ thuật phân đoạn, số lượng phần tử trong bảng quản lí đoạn là?
+a. 1024 phần tử
+c. Số lượng module.
+b. 3 đoạn (stack, data, code)
+d. Cả 3 đều sai.
+40. Kích thước một trang (máy 386) là?
+a. 4K
+b. 2K
+c. 16K
+d. 8K
+41. Trong kĩ thuật giảm bớt số phần tử của bảng trang, nếu sử dụng kĩ thuật bảng trang ngược thì số bảng phải dùng là?
+a. 4
+b. 2
+c. 1
+d. 3
+42. Trong kĩ thuật giảm bớt số phần tử của bảng trang, nếu sử dụng kĩ thuật phân trang nhiều cấp thì số bảng phải dùng là?
+a. 1
+b. 3
+c. 4
+d. 2
+43. Tài nguyên của hệ thống bao gồm?
+a. Bộ nhớ, bộ xử lí, bộ nhớ ngoài, máy in.
+b. Bộ nhớ, bộ xử lí, hệ điều hành, các thiết bị vào ra.
+c. Bộ nhớ, bộ xử lí và các thiết bị vào ra.
+d. Cả 3 đều sai.
+44. Hệ thống tính toán bao gồm các thành phần chính là?
+a. Phần cứng, hệ điều hành và người sử dụng.
+b. Phần cứng, chương trình ứng dụng và người sử dụng.
+c. Phần cứng, hệ điều hành, chương trình ứng dụng và người sử dụng.
+d. Phần cứng, hệ điều hành và chương trình ứng dụng.
+45. Shell là gì?
+a. Là môi trường giao tiếp giữa phần cứng và hệ điều hành.
+b. Là môi trường giao tiếp giữa chương trình và hệ điều hành.
+c. Là môi trường giao tiếp giữa người sử dụng và hệ điều hành.
+d. Cả 3 đều sai.
+46. Trong chế độ quản lí bộ nhớ phân đoạn kết hợp phân trang, việc truy nhập dữ liệu trên bộ nhớ cần mấy lần truy nhập?
+a. 3
+b. 2
+c. 4
+d. 1
+47. Sector có địa chỉ vật lí CHS (1,0,1) là sector có địa chỉ tuyệt đối trên ổ đĩa mềm là?
+a. 63
+b. 31
+c. 127
+d. 36
+48. Sector có địa chỉ tuyệt đối là 66 thì có địa chỉ vật lí CHS (đối với chuẩn IDE) bằng?
+a. 0,0,65
+b. 1,0,4
+c. 0,1,4
+d. Không đáp án nào đúng.
+49. Sector có địa chỉ tuyệt đối 4960 có địa chỉ vật lí CHS (đối với chuẩn IDE) bằng?
+a. 12,5,47
+b. 3,78,47
+c. 34,6,47
+d. 0,78,47
+50. Giá trị của phần tử trong bảng FAT16 là bao nhiêu thì chỉ ra cluster kết thúc?
+a. FFF8
+b. FFF0
+c. 0FFF
+d. FFFF
+51. Đặc điểm nào không phải là của cấu trúc chương trình module?
+a. Phân phối bộ nhớ liên tục khi chương trình hoạt động.
+b. Dùng chung module
+c. Tạo bảng quản lí module
+d. Biên tập riêng từng module
+52. Phát biểu nào sau đây không phải là vai trò của phòng đệm?
+a. Giảm số lần truy cập vật lí.
+b. Tăng hiệu suất hệ thống.
+c. Đảm bảo độc lập giữa trao đổi và xử lí.
+d. Thực hiện song song giữa trao đổi vào ra và xử lí.
+53. Trong FAT32, vùng hệ thống bao gồm?
+a. MB, BS, FAT1, FAT2.
+b. MB, BS, ROOT.
+c. MB, BS, FAT1, FAT2, ROOT.
+d. MB, BS, FAT, ROOT.
+54. Chương trình vi điều khiển là?
+a. Chương trình điều khiển hệ thống.
+b. Chương trình điều khiển máy tính.
+c. Chương trình điều khiển trực tiếp các thiết bị.
+d. Chương trình điều khiển gián tiếp các thiết bị.
+55. Đoạn găng là?
+a. Đoạn chương trình sử dụng tài nguyên trong.
+b. Đoạn chương trình sử dụng tài nguyên ngoài.
+c. Đoạn chương trình xử lí tài nguyên găng.
+d. Đoạn chương trình cho tài nguyên găng.
+56. Tài nguyên găng là?
+a. Là tài nguyên của hệ thống.
+b. Là tài nguyên bên trong của hệ thống.
+c. Là tài nguyên bên ngoài của hệ thống.
+d. Là tài nguyên mà khả năng phục vụ đồng thời bị hạn chế.
+57. Tiến trình tồn tại ở mấy trạng thái chính?
+a. 5
+b. 3
+c. 2
+d. 6
+58. Chương trình nào không phải là chương trình hệ thống?
+a. Hệ điều hành
+c. Chương trình dịch.
+b. Chương trình vi điều khiển
+d. Chương trình biên dịch.
+59. Ý nào sau đấy không phải là ưu điểm của hình thái giao tiếp biểu tượng?
+a. Tốc độ nhập lệnh nhanh.
+b. Chọn nhiều lệnh đồng thời.
+c. Dễ dàng bổ sung tham số cho chương trình
+d. Dễ sử dụng, không bị hạn chế về ngôn ngữ giao tiếp.
+60. Ý nào sau đây không phải là ưu điểm của hình thái giao tiếp bảng chọn?
+a. Tốc độ nhập lệnh nhanh.
+b. Dễ dàng bổ sung tham số cho chương trình.
+c. Không phải nhớ tập lệnh cồng kềnh.
+d. Không đòi hỏi cấu hình máy cao.
+61. Tại sao không có chuyển đổi từ trạng thái Ready sang trạng thái Blocked?
+a. Tiến trình đang chạy.
+b. Tiến trình chưa thực hiện.
+c. Tiến trình chưa đủ tài nguyên.
+d. Cả 3 đều đúng.
+62. Tại sao không có chuyển đổi từ trạng thái Blocked sang trạng thái Running?
+a. Tiến trình đang chạy.
+b. Tiến trình chưa đủ tài nguyên.
+c. Tiến trình chưa thực hiện nên không thể bị blocked.
+d. Cả 3 đều đúng.
+63. Với các máy tính trang bị cặp thanh ghi limit và base để hỗ trợ việc định vị và bảo vệ tiến trình, giá trị nào sẽ được nạp vào thanh ghi cơ sở?
+a. Địa chỉ của ô nhớ đầu tiên của bộ nhớ vật lí.
+b. Kích thước chương trình.
+c. Địa chỉ bắt đầu của vùng nhớ cấp phát cho chương trình.
+d. Địa chỉ tương đối của chương trình.
+64. Trong kĩ thuật NRU (Not Recently Used), trang được chọn thay ra là trang có cặp giá trị bit M, R là?
+a. 1,0
+b. 1,1
+c. 0,1
+d. 0,0
+65. Trong thuật toán “cơ hội thứ hai”, trang được chọn để thay thế là trang?
+a. Xuất hiện muộn nhất trong bộ nhớ và có bit Reference = 1.
+b. Xuất hiện sớm nhất trong bộ nhớ và có bit Reference = 0.
+c. Xuất hiện muộn nhất trong bộ nhớ và có bit Reference = 0.
+d. Xuất hiện sớm nhất trong bộ nhớ và có bit Reference = 1.
+66. Trong các chiến lược nạp trang, tất cả các trang của chương trình được nạp vào bộ nhớ ngay từ đầu là chiến lược nào?
+a. Nạp trước
+c. Phân phối giản đơn với cấu trúc phân trang.
+b. Nạp theo yêu cầu.
+d. Cả 3 đều đúng.
+67. Bộ nhớ phân phối cho chương trình trong IBM PC có mấy loại, là những loại nào?
+a. 2 loại: Bộ nhớ trong và bộ nhớ ngoài.
+b. 2 loại: bộ nhớ chung và bộ nhớ riêng.
+c. 3 loại: bộ nhớ ROM, bộ nhớ RAM, bộ nhớ cache.
+d. 2 loại: bộ nhớ ROM, bộ nhớ RAM.
+68. Biết kích thước trang là 4KB. Địa chỉ của dữ liệu trong chương trình là 5457. Địa chỉ vật lý của dữ liệu là?
+a. 30033
+b. 21841
+c. 1936
+d. 30936
+69. Địa chỉ của dữ liệu trong chương trình là 6456. Địa chỉ vật lý của dữ liệu là (biết kích thước trang là 4KB)?
+a. 936
+b. 30936
+c. 26936
+d. 56936
+70. Trong kĩ thuật quản lí bộ nhớ phân vùng cố định thì số lượng chương trình có thể nạp vào bộ nhớ lớn nhất là bằng?
+a. Hệ số nạp
+b. Hệ số vùng
+c. Hệ số song song
+d. Hệ số vùng cố định.
+71. Trong kĩ thuật quản lí phân chương (vùng) động, các vùng nhớ sau còn trống có kích thước như sau?100k, 250k, 260k, 300k, 200k, 260k. Vùng nhớ nào sẽ được chọn để nạp chương trình có kích thước 210k theo giải thuật First Fit? 
+a. 250k
+b. 300k
+c. 260k
+d. 100k
+72. Trong cấu trúc Overlay, chương trình được tổ chức các lớp như sau?
+Lớp 0: 80K
+Lớp 1: 40K, 60K, 100K
+Lớp 2: 50K, 70K, 80K
+Lớp 3: 60K, 70K
+73. Kích thước bộ nhớ yêu cầu để tổ chức cấu trúc chương trình này là?
+a. 380K
+b. 610K
+c. 330K
+d. 420K
+74. Có mấy lớp giải thuật điều độ cấp thấp?
+a. 1
+b. 2
+c. 3
+d. 4
+75. Nhiệm vụ của trình biên tập (Edit/Linker) là gì?
+a. Biên tập ra file .exe
+c. Liên kết các thư viện
+b. Biên tập ra file .obj
+d. Liên kết các module với nhau.
+76. Chương trình biên tập theo cấu trúc nào có tốc độ thưc hiện nhanh nhất?
+a. Cấu trúc phân trang
+b. Cấu trúc phân đoạn
+c. Cấu trúc overlay
+d. Cấu trúc động
+77. Yêu cầu nào không phải là yêu cầu của giải thuật điều độ tiến trình?
+a. Không đưa các tiến trình vào trạng thái bế tắc.
+b. Nếu tài nguyên găng được giải phóng thì nó sẽ được phục vụ ngay cho tiến trình chờ.
+c. Không để tiến trình nằm vô hạn trong đoạn găng.
+d. Đảm bảo tài nguyên găng không phục vụ quá khả năng của mình.
+78. Giải thuật điều độ nào không làm cho tiến trình phải chờ đợi tích cực?
+a. Semaphore
+c. Kiểm tra và xác lập
+b. Khoá trong
+d. Cả 3 đều đúng.
+79. Tại một thời điểm, với các hệ thống đơn bộ xử lí, có thể có tối đa bao nhiêu tiến trình ở trạng thái “thực hiện”?
+a. 0
+b. 1
+c. Không xác định
+d. Cả 3 đều sai.
+80. Điều kiện nào sau đây không nằm trong nhóm điều kiện xảy ra tắc nghẽn?
+a. Tồn tại tài nguyên găng.
+b. Có sự chia sẻ tài nguyên dùng chung.
+c. Không có sự thu hồi tài nguyên từ tiến trình đang chiếm giữ.
+d. Cả 3 đều đúng.
+83. Các tham số trong file win.ini, config.sys minh hoạ cho nguyên lí nào?
+a. Nguyên lý phủ chức năng.
+c. Nguyên lí bảng tham số điều khiển.
+b. Nguyên lí giá trị chuẩn.
+d. Nguyên lí Macroprocessor.
+84. Lớp giải thuật phòng ngừa thường áp dụng với những hệ thống?
+a. Vừa và nhỏ.
+c. Xuất hiện nhiều bế tắc.
+b. Tổn thất khi xảy ra nhỏ.
+d. Xuất hiện ít bế tắc.
+85. Phát biểu về bộ nhớ của IBM PC: “Một chương trình được quyền truy nhập tới chương trình và dữ liệu của chương trình bằng hoặc kém ưu tiên hơn”?
+a. Đúng
+b. Sai.
+c. 
+d. 
+86. Đặc điểm nào không phải là của cấu trúc chương trình overlay?
+a. Phân phối bộ nhớ theo sơ đồ tĩnh.
+b. Tiết kiệm bộ nhớ.
+c. Module ở lớp thứ i được gọi bởi module ở lớp thứ i-1.
+d. Tại một thời điểm có nhiều hơn n module trong bộ nhớ (n là số lượng lớp).
+87. Đặc điểm nào không phải là của cấu trúc chương trình tuyến tính?
+a. Không tốn bộ nhớ khi thực hiện.
+b. Thời gian thực hiện tối thiểu.
+c. Lưu động cao.
+d. Không dùng chung module.
+88. BitDiskError = 1 khi không có lỗi truy cập đĩa ở lần truy cập cuối cùng?
+a. Đúng
+b. Sai
+c. Cả 2 Đúng
+d. Cả 2 Sai
+89. Chức năng nào không phải của FAT?
+a. Quản lí truy cập file.
+c. Quản lí bộ nhớ phân phối cho từng file.
+b. Quản lí bộ nhớ tự do trên đĩa.
+d. Quản lí bộ nhớ kém chất lượng.
+90. Cấu trúc thư mục cây là của hệ thống nào?
+a. MS-DOS
+b. UNIX
+c. IBM OS
+d. Cả a và c đều đúng
+91. Cấu trúc thư mục phân cấp là của hệ thống nào?
+a. UNIX
+b. MS-DOS
+c. IBM OS
+d. Windows NT
+92. Trong bảng tham số của Bootsector của FAT16, trường lưu thông tin kích thước của FAT có offset?
+a. 1Eh
+b. 1Ch
+c. 24h
+d. 16h
+93. Hệ điều hành phân phối bộ nhớ ngoài cho người dùng với đơn vị là?
+a. Sector
+b. Cylinder
+c. Track
+d. Cluster
+94. Thành phần nào không nằm trong hệ thống quản lí file?
+a. Hệ thống điều khiển ổ đĩa.
+b. Hệ thống truy nhập vật lí.
+c. Hệ thống truy nhập logic.
+d. 
+95. Phòng đệm vòng tròn có mấy phòng đệm?
+a. 1
+b. 2
+c. 3
+d. 4
+96. Phòng đệm vòng tròn thường được áp dụng cho các hệ quản trị cơ sở dữ liệu?
+a. Đúng
+b. Sai
+c. Cả 2 Đúng
+d. Cả 2 Sai
+97. Đặc điểm nào không phải của Phòng đệm truy nhập theo giá trị?
+a. Vạn năng
+c. Tiết kiệm thời gian chuyển thông tin
+b. Tốn bộ nhớ
+d. Hệ số song song cao.
+98. Đâu là đặc điểm của Phòng đệm truy nhập theo địa chỉ?
+a. Kém vạn năng
+c. Không tốn bộ nhớ và thời gian chuyển thông tin trong bộ nhớ.
+b. Hệ số song song thấp
+d. Cả 3 phương án đều đúng.
+99. Trong kĩ thuật phòng đệm của hệ điều hành thì dữ liệu được đọc và ghi từ?
+a. RAM
+b. Cache
+c. Disk
+d. Buffer
+100. Phát biểu sau là tính chất nào của hệ điều hành: “Hạn chế truy nhập không hợp thức”?
+a. Tin cậy và chuẩn xác.
+c. Hiệu quả.
+b. Bảo vệ.
+d. Kế thừa và thích nghi.
+101. Phát biểu sau là tính chất nào của hệ điều hành: “Mọi công việc trong hệ thống đều phải có kiểm tra”?
+a. Tin cậy và chuẩn xác.
+c. Thuận tiện.
+b. Bảo vệ.
+d. Hiệu quả.
+102. “Hệ điều hành là môi trường đối thoại giữa Máy – Thao tác viên – Người sử dụng” là cách nhìn của?
+a. Người lập trình hệ thống.
+c. Nhà kĩ thuật.
+b. Người dùng.
+d. Người quản lí.
+103. Phát biểu sau liên quan tới nguyên lí nào của HĐH: “Không phải nhắc lại tới các giá trị thường dùng”?
+a. Bảng tham số điều khiển.
+c. Phủ chức năng.
+b. Macroprocessor.
+d. Giá trị chuẩn.
+104. Chương trình quản lí hoạt động và tài nguyên của máy tính là?
+a. Chương trình ứng dụng.
+c. Chương trình quản lí.
+b. Chương trình thường trú.
+d. Chương trình hệ thống.
+105. Hệ điều hành thực hiện ở chế độ?
+a. Bảo vệ.
+b. Độc quyền.
+c. Không độc quyền.
+d. Thực.
+106. Hệ điều hành được coi như là?
+a. Thành phần phần cứng.
+c. Hệ thống điều khiển phần cứng.
+b. Mở rộng của máy tính điện tử.
+d. Mở rộng của thành phần phần mềm.
+107. Phát biểu sau đúng hay sai: “FAT là tập hợp các phần tử có kích thước bằng nhau”?
+a. Đúng
+b. Sai
+c. Cả 2 Đúng
+d. Cả 2 Sai
+109. Thông tin của 18 bytes đầu tiên của bảng FAT12 như sau:FF0 FFF 006 FFF 002 000 00A 10A 000 ABA 003 000 Danh sách cluster tạo nên file là?
+a. 4-6-2-10-3
+b. 4-2-10-6-3
+c. 4-2-6-10-3
+d. 4-2-10-3-6
+110. Nhận xét nào không chính xác cho thuật toán điều phối Round Robin (RR)?
+a. RR điều phối các tiến trình dựa trên thời điểm vào Ready-List.
+b. RR là một thuật toán điều phối không độc quyền.
+c. RR ưu tiên cho các tiến trình có thời gian sử dụng CPU ngắn.
+d. RR rất thích hợp với các hệ điều hành hiện nay vì RR giúp cho tính tương tác giữa ứng dụng và end-user tốt hơn.
+111. Phát biểu nào sau đây không đúng về Master Boot Record (MBR)?
+a. Chứa bảng mô tả thông tin các phân vùng.
+b. Chứa đoạn chương trình giúp khởi động hệ thống.
+c. Nằm tại sector đầu tiên mỗi phân vùng.
+d. Có thể phục hồi các thông số của MBR.
+112. Phát biểu sau là tính chất nào của HĐH: “Hạn chế ảnh hưởng sai sót vô tình hay cố ý”?
+a. Bảo vệ.
+c. Tin cậy và chuẩn xác.
+b. Thuận tiện.
+d. Hiệu quả.
+113. Vai trò dưới đây là của nguyên lí nào của HĐH: “Người dùng không cần biết đầy đủ hoặc sâu về hệ thống”?
+a. Bảng tham số điều khiển
+c. Macroprocessor
+b. Giá trị chuẩn
+d. Phủ chức năng.
+114. Trong FAT16, vùng hệ thống (system area) bao gồm?
+a. MB, BS, FAT1, FAT2
+c. MB, BS, ROOT
+b. MB, BS, FAT1, FAT2, ROOT
+d. MB, BS, FAT, ROOT
+115. Nguyên lí Giá trị chuẩn còn có cách gọi tên khác là Nguyên tắc ngầm định (default), đúng hay sai?
+a. Đúng
+b. Sai
+c. Cả 2 Đúng
+d. Cả 2 Sai
+116. Trong vai trò đảm bảo độc lập của Phòng đệm, ‘độc lập’ ở đây bao gồm?
+a. Thông tin và phương tiện mang.
+c. Bản ghi logic và vật lí.
+b. Lưu trữ và xử lí.
+d. Cả 3 đều đúng.
+117. Đâu không phải là vai trò của SPOOL?
+a. Tăng hiệu suất hệ thống
+b. Tăng độ an toàn thông tin
+c. Giải phóng hệ thống khỏi sự ràng buộc về số lượng thiết bị.
+d. Tạo ra kĩ thuật lập trình mới, cho phép giảm số lần duyệt file trong khi xử lý.
+118. BitShutdown = 1 nếu ra khỏi hệ thống đúng cách, đúng hay sai?
+a. Đúng
+b. Sai
+c. Cả 2 Đúng
+d. Cả 2 Sai
+119. Từ phần tử thứ mấy trở đi, mỗi phần tử trong FAT tương ứng với một cluster và ngược lại?
+a. 1
+b. 2
+c. 3
+d. 4
+120. Giá trị của phần tử trong bảng FAT32 là bao nhiêu thì chỉ ra bad cluster?
+a. 0FFFFFF8
+b. 0FFFFFFF
+c. FFFFFFFF
+d. 0FFFFFF7
+121. Với hệ thống FAT16, bảng phân vùng (Master Boot) bắt đầu từ địa chỉ nào?
+a. 1CDh
+b. 2BEh
+c. 1BEh
+d. 000h
+122. Quản lý bộ nhớ trong IBM PC có mấy mức ưu tiên (Privilege Levels) và mức thấp nhất/cao nhất là?
+a. 3 (1/3)
+b. 3 (0/2)
+c. 4 (1/4)
+d. 4 (0/3)
+123. “Từng module được biên tập riêng biệt, khi thực hiện chỉ việc nạp module đầu tiên vào bộ nhớ” là đặc điểm của cấu trúc chương trình nào?
+a. Cấu trúc động
+b. Cấu trúc tuyến tính
+c. Cấu trúc overlay
+d. Cấu trúc phân trang
+124. Ý kiến nào không phải là nhược điểm của cấu trúc động?
+a. Tốn bộ nhớ
+c. Kém linh động
+b. Thời gian thực hiện lớn
+d. Đòi hỏi người dùng phải hiểu cơ chế của hệ thống.
+125. Trong cấu trúc phần tử của bảng phân vùng, khi đánh địa chỉ vật lí đầu, cần sử dụng bao nhiêu bit để đánh số hiệu sector/cylinder?
+a. 6bit/10bit
+b. 8bit/8bit
+c. 10bit/6bit
+d. 4bit/12bit
+126. Cấu trúc một phần tử của bảng phân vùng như sau, tính số sector của phân vùng này:800001F9 0BFEBF30 B9093D00 387B4C00?
+a. 3701580
+b. 5012280
+c. 8388609
+d. 5689008
+127. Kích thước một sector thường là bao nhiêu?
+a. 128B
+b. 256B
+c. 512B
+d. 4KB
+128. Trong chế độ quản lí bộ nhớ phân đoạn kết hợp phân trang, SCB gồm các thành phần nào (theo đúng thứ tự)?
+a. Dấu hiệu nạp PCB, địa chỉ nạp PCB, độ dài PCB.
+b. Độ dài PCB, địa chỉ nạp PCB, dấu hiệu nạp PCB.
+c. Dấu hiệu nạp PCB, độ dài PCB, địa chỉ nạp PCB.
+d. Địa chỉ nạp PCB, độ dài PCB, dấu hiệu nạp PCB.
+129. Đâu không phải đặc điểm của chế độ phân trang?
+a. Không cần phân phối bộ nhớ liên tục.
+b. Bị phân đoạn ngoài.
+c. Không sử dụng chung module giữa các chương trình.
+d. Bảng PCB có thể rất lớn.
+130. Trong chế độ quản lí bộ nhớ theo module, để đọc/ghi dữ liệu cần mấy lần truy nhập?
+a. 1
+b. 2
+c. 3
+d. 4
+131. Trong chế độ phân trang, để đọc/ghi dữ liệu cần mấy lần truy nhập?
+a. 1
+b. 2
+c. 3
+d. 4
+132. Đâu là đặc điểm của chế độ quản lí bộ nhớ theo module?
+a. Không cần phân phối bộ nhớ liên tục.
+b. Tồn tại hiện tượng phân đoạn ngoài.
+c. Hiệu quả phụ thuộc vào cấu trúc chương trình nguồn.
+d. Tất cả các ý trên.
+134. Trong bảng tham số đĩa hệ thống FAT, Bootsector mở rộng luôn có giá trị là bao nhiêu?
+a. 24h
+b. 29h
+c. 2Eh
+d. 32h
+135. Trong kĩ thuật quản lí phân chương (vùng) động, các vùng nhớ sau còn trống có kích thước như sau:100k, 250k, 260k, 300k, 200k, 260k. Vùng nhớ nào sẽ được chọn để nạp chương trình có kích thước 210k theo giải thuật Worst Fit?
+a. 250k
+b. 300k
+c. 260k
+d. 100k
+136. Thông tin 18 bytes đầu tiên của bảng FAT12 như sau?FF0 FFF FF0 005 FFF 004 009 003 007 008 ABC FF3 Cho biết số hiệu cluster bắt đầu là 6. Danh sách cluster tạo nên file là:
+a. 6-8-9-7-3-4-5
+b. 6-7-3-5-4-8-9
+c. 6-9-8-7-3-5-4
+d. 6-7-5-4-8-9-3
+137. Chương trình dịch thực hiện ở chế độ?
+a. Độc quyền
+b. Không độc quyền
+c. Thực
+d. Bảo vệ
+138. Trong FAT16, BitDiskError là bit nào trong xyztFF8 (x,y,z,t là các bit)?
+a. x
+b. y
+c. z
+d. t
+139. Trong FAT16, BitShutdown là bit nào trong xyztFF8 (x,y,z,t là các bit)?
+a. x
+b. y
+c. z
+d. t
+140. Trong phần tử FAT32, trường lưu thông tin kích thước của FAT có offset?
+a. 1Ch
+b. 24h
+c. 0Eh
+d. 16h
+141. Ai tạo ra SPOOL, người đó xử lí kết thúc, đúng hay sai?
+a. Đúng
+b. Sai
+c. Cả 2 Đúng
+d. Cả 2 Sai
+142. Trong tổ chức SPOOL, với mỗi phép trao đổi vào ra, hệ thống tạo ra mấy chương trình kênh?
+a. 5
+b. 4
+c. 3
+d. 2
+143. SPOOL có can thiệp vào chương trình người dùng không?
+a. Có
+b. Không
+c. 
+d. 
+144. SPOOL có mấy giai đoạn, là những giai đoạn nào?
+a. 3 giai đoạn: khởi tạo, thực hiện, kết thúc.
+b. 4 giai đoạn: khởi tạo, thực hiện, xử lí, kết thúc.
+c. 2 giai đoạn: thực hiện, xử lí kết thúc.
+d. 3 giai đoạn: khởi tạo, xử lí, kết thúc.
+145. Phép trao đổi vào ra của các thiết bị ngoại vi được thực hiện thao nguyên lí nào?
+a. Bảng tham số điều khiển
+c. Hai loại tham số
+b. Phủ chức năng.
+d. Macroprocessor
+146. Thiết bị ngoại vi trong các máy tính thế hệ I và II có hạn chế gì?
+a. Tốc độ
+b. Chủng loại
+c. Số lượng
+d. Cả 3 đều đúng.
+147. Nguyên lí hai loại tham số gồm hai tham số nào?
+a. Tham số địa chỉ và tham số dữ liệu
+c. Tham số vị trí và tham số khoá.
+b. Tham số dữ liệu và tham số khoá
+d. Tham số địa chỉ và tham số vị trí.
+148. Theo nguyên lí bảng tham số điều khiển, bảng tham số cấu hình hệ thống được lưu trữ ở đâu?
+a. ROM
+b. Đĩa cứng
+c. CMOS
+d. RAM
+149. Phát biểu sau là của nguyên lí nào: “Hệ thống tự tạo ra chương trình và thực hiện chương trình tạo ra”?
+a. Bảng tham số điều khiển
+c. Phủ chức năng.
+b. Macroprocessor
+d. Hai loại tham số.
+150. “Đảm bảo thuận tiện cho người dùng” là vai trò của nguyên lí nào của HĐH?
+a. Nguyên lí phủ chức năng.
+c. Nguyên lí macroprocessor
+b. Nguyên lí giá trị chuẩn
+d. Nguyên lí bảng tham số điều khiển.
+151. Với các đĩa từ, CD, bảng tham số được ghi ở đâu?
+a. Header
+b. System area
+c. Data area
+d. Cả 3 đều sai.
+152. Chương trình mồi là như nhau với mỗi hệ điều hành?
+a. Đúng
+b. Sai
+c. 
+d. 
+153. Kích thước của phần tử MCB trong chế độ Protected Mode là?
+a. 16B
+b. 32B
+c. 8B
+d. 4B
+154. Có mấy lớp giải thuật chống bế tắc, là những giải thuật nào?
+a. 2 (phòng ngừa, nhận biết và khắc phục)
+b. 3 (phòng ngừa, dự báo và tránh, nhận biết và khắc phục)
+c. 3 (phòng ngừa, điều hoà, nhận biết, khắc phục)
+d. 2 (điều hoà, nhận biết và khắc phục)
+155. Trong thiết kế và xây dựng hệ thống, nguyên lí Tập trung là của hệ thống nào?
+a. Windows
+b. UNIX
+c. IBM OS
+d. Cả 3 đều đúng.
+156. Trong thiết kế và xây dựng hệ thống, nguyên lí Thử và sai là của hệ thống nào?
+a. IBM OS
+b. UNIX
+c. Linux
+d. Windows
+157. Trong IBM PC có bao nhiêu loại sự kiện?
+a. 7 loại
+b. 128 loại
+c. 256 loại
+d. 3 loại
+158. Cơ chế “sự kiện và ngắt” được áp dụng cho các máy tính từ thế hệ thứ mấy?
+a. Thế hệ I
+b. Thế hệ III
+c. Thế hệ II
+d. Cả 3 đều sai.
+159. Với người lập trình, chương trình và thực hiện chương trình là ánh xạ từ tên sang giá trị ?
+a. Đúng
+b. Sai
+c. 
+d. 
+160. Bộ nhớ logic bị giới hạn về kích thước 
+a. Sai
+b. Đúng
+c. 
+d. 
+162. Đâu không phải là đặc điểm của thuật giải FCFS (First Come – First Serve)?
+a. Thời gian chờ trung bình nhỏ
+c. Đơn giản
+b. Không cần input bổ sung
+d. Mọi tiến trình đều kết thúc được
+163. Đâu không phải là đặc điểm của thuật giải SJF (Shortest Job First)?
+a. Non-preemptive (độc quyền)
+c. Tiến trình dài có nguy cơ không kết thúc được.
+b. Dễ dàng dự báo thời điểm phục vụ tiến trình
+d. Thời gian chờ trung bình nhỏ.
+164. Đâu là đặc điểm của thuật giải RR (Round Robin)?
+a. Mọi tiến trình đều kết thúc được.
+c. Non-preemptive (độc quyền)
+b. Không cần tham số lượng tử thời gian
+d. Thời gian chờ đợi trung bình lớn.
+165. Đâu không phải là giải thuật điều độ cấp thấp?
+a. Khoá trong
+c. Semaphore
+b. Kiểm tra và xác lập
+d. Dự báo và phòng ngừa.
+166. Công cụ điều độ cấp cao nằm ngoài tiến trình được điều độ, do hệ thống đảm nhiệm ?
+a. Đúng
+b. Sai
+c. 
+d. 
+167. Công cụ điều độ cấp thấp được cài đặt ngay vào trong tiến trình được điều độ ?
+a. Sai
+b. Đúng
+c. 
+d. 
+168. Trong lớp giải thuật phòng ngừa, để chống tài nguyên găng ta có thể?
+a. Tổ chức hệ thống tài nguyên logic
+c. Tổ chức SPOOL
+b. Tổ chức 2 mức truy nhập
+d. Cả 3 đều đúng.
+169. “Mỗi tài nguyên găng được đặt tương ứng với 1 biến nguyên đặc biệt” là đặc điểm của giải thuật điều độ nào?
+a. Khoá trong
+c. Kiểm tra và xác lập
+b. Semaphore
+d. Cả 3 đều đúng
+170. Giải thuật “Người chủ ngân hàng” thuộc lớp giải thuật chống bế tắc nào sau đây?
+a. Nhận biết và khắc phục
+c. Dự báo và tránh
+b. Phòng ngừa
+d. Cả 3 đều sai.
+171. Trong máy IBM 360/370 có bao nhiêu loại sự kiện?
+a. 128
+b. 7
+c. 64
+d. 256
+172. Trong các đáp án dưới đây, đâu là cấu hình trong hệ thống nhiều processor?
+a. Cấu hình phân cấp
+b. Liên kết linh hoạt
+c. Đẳng cấu
+d. Cả 3 đều đúng.
+173. Trong xử lý ngắt của IBM PC, ngắt thường trú chương trình là?
+a. INT 20
+b. INT 11
+c. INT 27
+d. INT 13
+174. Trong xử lý ngắt của IBM PC, ngắt kiểm tra chương trình là?
+a. INT 20
+b. INT 13
+c. INT 26
+d. INT 11
+175. Trong xử lý ngắt của IBM PC, kích thước một con trỏ ngắt là?
+a. 4KB
+b. 16KB
+c. 4B
+d. 16B
+176. Trong xử lý ngắt của IBM PC, kích thước một vector ngắt là?
+a. 4KB
+b. 32B
+c. 1KB
+d. 16KB
+177. “Khi chuyển lớp, cần phải giải phóng tài nguyên lớp cũ” là cách gọi của nguyên tắc nào trong lớp giải thuật phòng ngừa?
+a. Nguyên tắc phân phối
+c. Nguyên tắc điều độ
+b. Nguyên tắc xử lý
+d. Nguyên tắc phòng ngừa
+178. Công cụ để chống xếp hàng chờ đợi trong lớp giải thuật phòng ngừa là?
+a. Điểm gác (control points)
+c. Điểm ngắt (break points)
+b. Điểm tựa (adjcency points)
+d. Cả a và c đều đúng.
+179. Trong phương pháp kiểm tra và xác lập, IBM PC sử dụng nhóm lệnh BTS (Binary Test and Set) đúng hay sai?
+a. Sai
+b. Đúng
+c. 
+d. 
+180. Quản lý tài nguyên cho tiến trình con bao gồm Hệ thống quản lý tài nguyên tập trung và Hệ thống quản lý tài nguyên phân tán??
+a. Đúng
+b. Sai
+c. 
+d. 

@@ -1,0 +1,440 @@
+1. Hệ điều hành là chương trình hoạt động giữa người sử dụng với :
+a. Phần mềm của máy tính
+b. Phần cứng của máy tính
+c. Các chương trình ứng dụng
+d. CPU và bộ nhớ
+2. Trong việc phân loại mô hình hệ điều hành, loại có nhiều bộ xử lí cùng chia sẽ hệ thống đường truyền, dữ liệu, đồng hồ, bộ nhớ, các thiết bị ngoại vi thuộc dạng :
+a. Hệ thống xử lí đa chương
+b. Hệ thống xử lí đa nhiệm
+c. Hệ thống xử lí song song
+d. Hệ thống xử lí thời gian thực
+3. Máy tính có thể lưu trữ thông tin trong nhiều dạng thiết bị vật lí khác nhau như băng từ, đĩa từ,. . Để thống nhất cách truy xuất hệ thống lưu trữ trong máy tính, hệ điều hành định nghĩa một đơn vị lưu trữ là :
+a. Thư mục
+b. Partition
+c. FAT
+d. Tập tin
+4. Ở hệ điều hành có cấu trúc phân lớp, tập hợp các lời gọi hệ thống được tạo ra bởi :
+a. Lớp phần cứng
+b. Lớp giao tiếp với người sử dụng
+c. Lớp ứng dụng
+d. Lớp kế lớp phần cứng - hạt nhân
+5. Lời gọi hệ thống là lệnh do hệ điều hành cung cấp dùng để giao tiếp giữa hệ điều hành và:
+a. Tiến trình
+b. Chương trình ứng dụng
+c. Phần cứng máy tính
+d. Người sử dụng
+6. Trong các cấu trúc của hệ điều hành sau đây cấu trúc nào tương thích dễ dàng với mô hình hệ thống phân tán
+a. Cấu trúc đơn giản
+b. Cấu trúc theo lớp
+c. Cấu trúc máy ảo
+d. Cấu trúc Servicer-client
+7. Câu nào sau đây là không chính xác :
+a. Tiến trình là một chương trình đang ở trong bộ nhớ
+b. Tiến trình là một chương trình đang xử lí, sở hữu một không gian địa chỉ, một con trỏ lệnh, một tập các thanh ghi và stack
+c. Tiến trình tự quyết định thời điểm cần dừng hoạt động đang xử lí để phục vụ tiến trình khác. 
+d. Các tiến trình có thể liên lạc với nhau không thông qua hệ điều hành. 
+8. ”Tiến trình yêu cầu một tài nguyên nhưng chưa được đáp ứng vì tài nguyên chưa sẵn sàng, hoặc tiến trình phải chờ một sự kiện hay thao tác nhập xuất ” thuộc dạng chuyển trạng thái nào sau đây
+a. Running -> Ready
+b. Ready -> Running
+c. Running -> Blocked
+d. Blocked -> Ready
+9. Khi một tiến trình người dùng gọi đến một lời gọi hệ thống, tiến trình của hệ điều hành xử lí lời gọi này hoạt động theo chế độ:
+a. Không đặc quyền
+b. Đặc quyền
+c. Không câu nào đúng
+d. 
+10. Giả tiến trình A sinh ra tiểu trình B, C, câu nào sau đây là không chính xác :
+a. Tiểu trình B và C không sử chung con trỏ lệnh
+b. Tiểu trình B và C không sử chung không sử chung tập thanhghi c. Tiểu trình B và
+c. không sử chung stack
+d. Tiểu trình B và C không sử chung không gian địa chỉ. 
+11. DCB là một vùng nhớ lưu trữ các thông tin mô tả về tiến trình, nó có nhiều thành phần. Thông tin về danh sách các tài nguyên hệ thống mà tiến trình đang sử dụng thuộc loại thành phần nào sau đây :
+a. Định danh của tiến trình
+b. Trạng thái của tiến trình
+c. Thông tin giao tiếp
+d. Ngữ cảnh của tiến trình
+12. Khi một tiến trình kết thúc xử lí, hệ điều hành huỷ bỏ nó bằng một số hoạt động, hoạt động nào sau là không cần thiết :
+a. Huỷ bỏ định danh của tiến trình. 
+b. Thu hồi các tài nguyên cấp phát cho tiến trình
+c. Huỷ tiến trình ra khỏi tất cả các danh sách quản lí của hệ thống
+d. Huỷ bỏ PCB của tiến trình
+13. Hệ điều hành sử dụng các thành phần nào sau đây của nó để chuyển đổi ngữ cảnh và trao CPU cho một tiến trình khác (đối với tiến trình đang thực thi)
+a. Bộ điều phối
+b. Bộ phân phối
+c. Khối quản lí tiến trình
+d. Khối quản lí tài nguyên
+14. Để các tiến trình chia sẻ CPU một cách công bằng, không có tiến trình nào phải chờ đợi vô hạn để được cấp CPU, hệ điều hành dùng thành phần nào để giải quyết vấn đề này:
+a. Bộ điều phối
+b. Khối quản lí tiến trình
+c. Khối quản lí tài nguyên
+d. Bộ phân phối
+15. Giải thuật điều phối đơn giản và dễ cài đặt nhưng không thích hợp với các hệ thống nhiều người dùng thuộc loại :
+a. Điều phối độc quyền
+b. Điều phối không độc quyền
+c. Không câu nào đúng
+d. Cả hai câu đều đúng
+16. Nguyên lí phân phối độc quyền thường thích hợp với các hệ xử lí :
+a. Hệ thống xử lí theo thời gian thực
+b. Hệ thống đa chương
+c. Hệ thống chia sẻ tương tác
+d. Hệ thống xử lí theo lô
+17. Tiến trình đang thực thi sẽ chuyển về loại danh sách nào khi xảy ra sự kiện đợi một thao tác nhập. xuẩt hoàn tất,yêu cầu tài nguyên dữ liệu chưa được thoã mãn, yêu cầu tạm dừng:
+a. Danh sách sẵn sàng (Ready list)
+b. Danh sách tác vụ (Job list)
+c. Danh sách chờ đợi (Waiting list)
+d. Không câu nào đúng
+18. Trong toàn bộ hệ thống hệ điều hành sử dụng bao nhiêu danh sách sẵn sàng:
+a. 2 danh sách
+b. 1 danh sách
+c. Một danh sách cho mỗi tiến trình
+d. Một danh sách cho một cho mỗi tài nguyên (thiết bị ngoại vi)
+19. Chức năng điều phối tác vụ của hệ điều hành được kích hoạt khi :
+a. Hệ thống tạo lập một tiến trình
+b. Tiến trình kết thúc xử lí
+c. Xảy ra ngắt
+d. Câu a,b đúng
+20. Thuật toán nào sau đây là thuật toán có thể điều phối theo nguyên tắc độc quyền :
+a. FIFO
+b. Xoay vòng
+c. Điều phối với độ ưu tiên
+d. Theo công việc ngắn nhất (Shortest job first)
+21. Khi một tiến trình được tạo ra mà bộ nhớ chưa đủ chỗ nó sẽ được chèn vào danh sách :
+a. Danh sách tác vụ(Job list)
+b. Danh sách sẵn sàng(Ready list)
+c. Danh sách chờ (waiting list)
+d. 
+22. Câu nào sau đây phát biểu không chính xác:
+a. Tiến trình xử lí tín hiệu theo cách riêng của nó
+b. Tiến trình xử lí tín hiệu bằng cách gọi hàm xử lí tín hiệu
+c. Tiến trình có thể trao đổi dữ liệu
+d. Tiến trình có thể thông báo cho nhau về một sự kiện 
+23. Phương pháp nhanh nhất để trao đổi thông tin giữa các tiến trình 
+a. Đường ống
+b. Vùng nhớ chia sẻ
+c. Trao đổi thông điệp
+d. Socket
+24. Kĩ thuật nào sau đây không thể áp dụng hiệu quả trong hệ thống phân tán
+a. Đường ống (Pipe)
+b. Vùng nhớ chia sẻ
+c. Trao đổi thông điệp
+d. Socket
+25. Kĩ thuật nào sau đây là liên lạc trực tiếp giữa hai tiến trình 
+a. Đường ống(Pipe)
+b. Vùng nhớ chia sẻ
+c. Trao đổi thông điệp
+d. Socket
+26. Khi giải quyết bài toán miền giăng, điều kiện nào sau đây là không cần thiết:
+a. Không có hai tiến trình nào ở trong miền giăng cùng một lúc
+b. Phải giả thiết tốc độ các tiến trình, cũng như về số lượng bộ xử lí
+c. Một tiến trình bên ngoài miền giăng không được ngăn cản các tiến trình khác vào miền giăng
+d. Không có tiến trình nào phải chờ vô hạn để được vào miền giăng
+27. Trong các giải pháp đồng bộ tiến trình sau, giải pháp nào vi phạm điều kiện “Không có hai tiến trình cùng ở trong miền giăng cùng lúc”. 
+a. Sử dụng biến cờ hiệu
+b. Sử dụng luân phiên
+c. Giải pháp Peterson
+d. Câu b,c là đúng
+28. Trong các giải pháp đồng bộ tiến trình sau, giải pháp nào giải quyết được vấn đề truy xuất độc quyền trên các máy tính có một hay nhiều bộ xử lí chia sẻ một vùng nhớ chung
+a. Trao đổi thông điệp
+b. Monitor
+c. Semaphone
+d. Sleep và Wakeup
+29. Trong các giải pháp sau, giải pháp nào tiến trình đang chờ nhưng vẫn chiếm dụng CPU
+a. Sleep and Wakeup
+b. Monitor
+c. Semaphone
+d. Busy waiting
+30. Trong các biện pháp ngăn chặn tắc nghẽn sau, biện pháp nào dễ ảnh hưởng đến việc bảo vệ tính toàn vẹn dữ liệu của hệ thống:
+a. Tiến trình phải yêu cầu tất cả các tài nguyên trước khi xử lí
+b. Khi một tiến trình yêu cầu một tài nguyên mới và bị từ chối, nó phải giải phóng tài nguyên đang bị chiếm giữ, sau đó được cấp phát trở lại cùng lần với tài nguyên mới
+c. Cho phép hệ thống thu hồi tài nguyên từ các tiến trình bị khoá và cấp phát trở lại cho tiến trình khi nóthoát khỏi tình trạng bị khoá. 
+d. Câu a và b đúng
+31. Để ngăn chặn tắc nghẽn chúng ta phải đảm bảo tối thiểu một trong các điều kiện gây ra tắc nghẽn không được xảy ra, trong các điều kiện sau điều kiện nào là khó có khả năng thực hiện được :
+a. Có sử dụng tài nguyên không thể chia sẻ
+b. Sự chiếm giữ và yêu cầu thêm tài nguyên không thể chia sẻ
+c. Không thu hồi được tài nguyên từ tiến trình đang giữ chúng
+d. Tồn tại một chu kì trong đồ thị cấp phát tài nguyên
+32. Trong đồ thị cấp phát tài nguyên, tài nguyên được thể hiện bằng :
+a. Hình tròn
+b. Hình thoi
+c. Hình vuông
+d. Hình tam giác
+33. Trong đồ thị cấp phát tài nguyên, tiến trình được thể hiện bằng :
+a. Hình tròn
+b. Hình thoi
+c. Hình vuông
+d. Hình tam giác
+35. Để ngăn chặn một tắc nghẽn chỉ cần:
+a. Có sử dụng tài nguyên không thể chia sẻ
+b. Sự chiếm giữ và yêu cầu thêm tài nguyên không thể chia sẻ 
+c. Không thu hồi được tài nguyên từ tiến trình đang giữ chúng 
+d. Tồn tại một chu kì trong đồ thị cấp phát tài nguyên
+36. Địa chỉ thực tế mà trình quản lí bộ nhớ nhìn thấy và thao tác là:
+a. Địa chỉ logic
+b. Địa chỉ vật lí
+c. Không gian địa chỉ
+d. Không gian vật lí
+37. Tập hợp tất cả địa chỉ ảo phát sinh bởi một chương trình gọi là:
+a. Không gian địa chỉ
+b. Không gian vật lí
+c. Địa chỉ vật lí
+d. Địa chỉ logic
+38. Vào thời điểm nào sau đây tiến trình chỉ thao tác trên địa chỉ ảo, không bao giờ thấy được các địa chỉ vật lí
+a. Thời điểm biên dịch
+b. Thời điểm nạp
+c. Thời điểm xử lí
+d. Câu a,b là đúng
+39. Trong việc cấp phát vùng nhớ liên tục cho tiến trình, mô hình nào cho phép di chuyển tiến trình trong bộ nhớ sau khi nạp :
+a. Mô hình Linker-Loader
+b. Mô hình Base-Limit
+c. Cả hai câu đều đúng
+d. Cả hai câu đều sai
+40. Thuật toán chọn đoạn trống để thoã mãn nhu cầu cho một tiến trình (trong phân đoạn vùng nhớ )
+a. First-fit
+b. Best-fit
+c. Worst-fit
+d. Không câu nào đúng
+41. Hiện tượng phân mảnh là :
+a. Vùng nhớ bị phân thành nhiều vùng không liên tục
+b. Vùng nhớ trống được dồn lại từ các mảnh bộ nhớ nhỏ rời rạc
+c. Tổng vùng nhớ trống đủ để thoã mãn nhu cầu nhưng các vùng nhớ này lại không liên tục nên không đủ để cấp cho tiến trình khác
+d. Không câu nào đúng
+42. Trong kĩ thuật cấp phát vùng nhớ phân đoạn một địa chỉ ảo được thể hiện bởi: 
+a. Bộ <s,d> trong đó s là số hiệu phân đoạn, d là địa chỉ tương đối trong s 
+b. Bộ <base, limit > với base là chỉ số nền,limit là chỉ số giới hạn
+c. Không câu nào đúng
+d. Cả hai câu đều đúng
+43. Với địa chỉ logic <s,d> và thanh ghi nền STBR, thanh ghi giới hạn STLR địa chỉ vật lí được tính tương ứng với đia chỉ logic là:
+a. STLR -s-d
+b. STBR+s+d
+c. STLR- STBR+s+d
+d. s+d
+44. Thuật toán chọn vùng trống đầu tiên đủ lớn để nạp tiến trình là:
+a. First-fit
+b. Best-fit
+c. Worst-fit
+d. Không câu nào đúng
+45. Thuật toán chọn vùng trống đầu tự do nhỏ nhất nhưng đủ lớn để nạp tiến trình là:
+a. First-fit
+b. Best-fit
+c. orst-fit
+d. Không câu nào đúng
+46. Thuật toán chọn vùng trống đầu tự do lớn nhất để nạp tiến trình là:
+a. First-fit
+b. Best-fit
+c. Worst-fit
+d. Không câu nào đúng
+47. Trong kĩ thuật phân trang nếu kích thước không gian địa chỉ là 2 m kích thước trang là 2n câu nào sau đây phát biểu không chính xác:
+a. n-m bit cao của địa chỉ ảo biểu diễn số hiệu trang và n bit thấp cho biết địa chỉ tương đối trong trang
+b. m-n bit thấp của địa chỉ ảo biểu diễn số hiệu trang và n bit cao cho biết địa chỉ tương đối trong trang
+c. m-n bit cao của địa chỉ ảo biểu diễn số hiệu trang và n bit thấp cho biết địa chỉ tương đối trong trang
+d. Câu b,c đúng
+48. Xét cơ chế MMU trong kĩ thuật phân trang với địa ảo có dạng <p,d> để chuyển đổi địa chỉ này sang địa chỉ vật lí, MMU dùng bảng trang, phát biểu nào sau đây là chính xác:
+a. Phần tử thứ d trong bảng trang lưu số hiệu khung trang trong bộ nhớ vật lí đang chứa trang p
+b. Phần tử thứ p trong bảng trang lưu số hiệu khung trang trong bộ nhớ vật lí đang chứa trang d
+c. Phần tử thứ p+d trong bảng trang lưu số hiệu khung trang trong bộ nhớ vật lí đang chứa trang p
+d. Phần tử thứ p trong bảng trang lưu số hiệu khung trang trong bộ nhớ vật lí đang chứa trang p
+49. Kĩ thuật cấp phát nào sau đây loại bỏ được hiện tượng phân mảnh ngoại vi 
+a. Phân trang. 
+b. Phân đoạn
+c. Cấp phát liên tục
+d. Câu a,b là đúng
+50. Giả sử bộ nhớ chính được phân vùng có kích thước theo thứ tự là 600k, 500k, 200k, 300k, các tiến trình theo thứ tự yêu cầu cấp phát có kích thước 212K, 417K, 112K, 426K. Nếu sử dụng thuật toán Best-fit quá trình cấp phát bộ nhớ sẽ như thể nào : 
+a. 212K->600K, 417K->500K,112K->300K,426K->200K
+b. 212K->600K, 417K->500K,112K->200K,426K->300K
+c. 212K->300K, 417K->500K,112K->200K,426K->600K
+d. Không câu nào đúng
+51. Xét không gian địa chỉ có 8 trang, mỗi trang có kích thước 1K ánh xạ vào bộ nhớ có 32 khung trang, Hỏi phải dùng bao nhiêu bít để thể hiện địa chỉ logic của không gian địa chỉ này
+a. 32bit
+b. 8 bit
+c. 24bit
+d. 13bit
+52. Xét không gian địa chỉ có 8 trang, mỗi trang có kích thước 1K ánh xạ vào bộ nhớ có 32 khung trang, Hỏi phải dùng bao nhiêu bít để thể hiện địa chỉ vật lí của không gian địa chỉ này
+a. 32bit
+b. 8 bit
+c. 15bit(215bit)
+d. 
+53. Điều kiện một phân đoạn có thể thuộc không gian địa chỉ của 2 tiến trình:
+a. Không thể được
+b. Các phần tử trong bảng phân đoạn của hai tiến trình này cùng chỉ đến một vị trí vật lí nhất
+c. Không câu nào đúng
+d. 
+54. Thuật toán thay thế trang mà chọn trang lâu được sử dụng nhất trong tương lai thuộc loại :
+a. FIFO
+b. LRU
+c. Tối ưu
+d. NRU
+55. Trong thuật toán thay thế trang “cơ hội thứ hai nâng cao” trang được chọn là trang :
+a. Trang đầu tiên được tìm thấy trong lớp có độ ưu tiên thấp nhất và khác rỗng. 
+b. Trang đầu tiên được tìm thấy trong lớp có độ ưu tiên cao nhất và khác rỗng . 
+c. Trang cuối cùng được tìm thấy trong lớp có độ ưu tiên thấp nhất và khác rỗng
+d. Trang cuối cùng được tìm thấy trong lớp có độ ưu tiên cao nhất và khác rỗng
+56. Thuật toán thay thế trang dùng thời điểm cuối cùng trang được truy xuất là thuật toán :
+a. FIFO
+b. LRU
+c. Tối ưu
+d. NRU
+57. Thuật toán thay thế trang dùng thời điểm trang sẽ được sử dụng là thuật toán :
+a. FIFO
+b. LRU
+c. Tối ưu
+d. NRU
+58. Bit Dirty trong cấu trúc của 1 phần tử bảng trang có ý nghĩa :
+a. Cho biết trang nào đã được truy xuất đến và trang nào không
+b. Cho biết trang đó có tồn tại trong bộ nhớ hay không. 
+c. Cho biết trang đó đã bị thay đổi hay chưa để cập nhật trang trên đĩa. 
+d. 
+59. Gọi p là xác suất xảy ra 1 lỗi trang (0<p<1)p= 0: không có lỗi trang nào p=1: mỗi truy xuất sinh ra một lỗi trang ma : thời gian truy xuất bộ nhớ swapin, swapout là thời gian hoán chuyển trang Thời gian thực hiện 1 lần truy xuất bộ nhớ sẽ là :
+a. EAT= p*ma +(1-p)*(swapout+swapout);
+b. EAT= (1-p)*ma + p*(swapout+swapout);
+c. EAT= p*ma + (1-p)*(swapout-swapout)
+d. Câu a,b là sai
+60. Các thuật toán sau thuật toán nào thuộc loại thuật toán thống kê:
+a. LFU
+b. LRU
+c. NRU
+d. NFU
+61. Số khung trang tối thiểu cần cấp phát cho một tiến trình được quy định bởi :
+a. Kiến trúc máy tính
+b. Dung lượng bộ nhớ vật lí có thể sử dụng
+c. Người lập trình
+d. Không câu nào đúng
+62. Nếu tổng số khung trang yêu cầu của các tiến trình trong hệ thống vượt quá số khung trang có thể sử dụng, hệ điều hành sẽ :
+a. Huỷ bỏ tiến trình nào dùng nhiều khung trang nhất
+b. Tạm dừng tiến trình nào đó giải phóng khung trang cho tiến trình khác hoàn tất
+c. Huỷ bỏ tiền trình đang dùng ít khung trang nhất d. Không câu nào đúng
+d. 
+63. Trong các thuật toán sau thuật toán nào không là thuật toán cấp phát khung trang 
+a. Cấp phát công bằng
+b. Cấp phát theo tỉ lệ kích thước
+c. Cấp phát theo thứ tự trước sau. 
+d. Cấp phát theo độ ưu tiên. 
+64. Kiểu tập tin nào liên quan đến nhập xuất thông qua các thiết bị nhập xuất tuần tự như màn hình, máy in, card mạng
+a. Tập tin thường
+b. Thư mục
+c. Tập tin có kí tự đặc biệt
+d. Tập tin khối
+65. Hệ điều hành nào sau phân biệt chữ thường, hoa đối với tập tin 
+a. MS-DOS
+b. UNIX
+c. WINDOW
+d. Câu a,c là đúng
+66. Loại thư mục nào dễ tổ chức và khai thác nhưng gây khó khăn khi đặt tên tập tin không trùng nhau và người sử dụng không thể phân nhóm cho tập tin và tìm kiếm chậm
+a. Thư mục một cấp
+b. Thư mục hai cấp
+c. Thư mục đa cấp
+d. Không câu nào đúng
+67. Cách cài đặt hệ thống tập tin nào không cần dùng bảng FAT 
+a. Cấp phát liên tục
+b. Cấp phát không liên tục dùng danh sách liên kết 
+c. Cấp phát không liên tục dùng bảng chỉ mục 
+d. Câu a,b là đúng
+68. Cách cài đặt hệ thống tập tin nào không bị lãng phí do phân mảnh ngoại vi, không cần dùng bảng FAT nhưng truy xuất ngẫu nhiên sẽ chậm và khó bảo vệ số hiệu khối tập tin
+a. Cấp phát liên tục
+b. Cấp phát liên tục dùng danh sách liên kết
+c. Dùng bảng chỉ mục
+d. Dùng FAT
+69. Cách cài đặt hệ thống tập tin nào sau đây hiệu quả cho việc quản lí những hệ thống tập tin lớn
+a. Cấp phát liên tục
+b. Cấp phát không liên tục dùng FAT
+c. Dùng cấu trúc I-node
+d. Câu a,b là đúng
+70. Với một đĩa 1 Gb kích thước một khối là 4K, nếu quản lí khối trống dùng vector bit thì kích thước vector bit là bao nhiêu:
+a. 2 khối
+b. 4 khối
+c. 8 khối
+d. 16 khối
+71. Với một đĩa 20M kích thước một khối là 1K, nếu quản lí khối trống dùng DSLK cần bao nhiêu khối để quản lí đĩa này bao nhiêu:
+a. 20 khối
+b. 40 khối
+c. 80 khối
+d. 16 khối
+72. Trong hệ thống tập tin của MS-DOS sector đầu tiên, track 0, side 0 đối với đĩa cứng thông tin về :
+a. Boot sector
+b. Bảng partition
+c. Bảng FAT
+d. Dữ liệu thường 
+73. Trong bảng FAT của hệ thống tập tin MS-DOS người ta mô tả loại đĩa bằng cách :
+a. Dùng 2 entry đầu tiên của bảng FAT
+b. Dùng 1 entry đầu tiên của bảng FAT
+c. Dùng entry của bảng thư mục RDET
+d. Không câu nào đúng
+74. Đối với hệ thống mở một tập tin, MS-DOS tìm các thông tin về tập tin ở:
+a. Bảng FAT
+b. Bảng thư mục
+c. Boot sector
+d. Tất cả đều sai
+75. Đối với tập tin của WINDOW NTFS Partition, với partition có kích thước từ 8->16 Gb thì số sector trên một cluster là :
+a. 8 Sector
+b. 16 Sector
+c. 32 Sector
+d. 64 Sector
+76. Trong cấu trúc partition của WINDOW NTFS thông tin về tập tin và thư mục trên partition này được lưu trong:
+a. Partition bootsector
+b. Master File Table (MFT)
+c. Các tập tin hệ thống
+d. Vùng các tập tin
+77. Tạo, huỷ, mở ,đóng, đọc, ghi … là các tác vụ cần thiết để hệ điều hành:
+a. Quản lí tập tin
+b. Quản lí bộ nhớ
+c. Quản lí tiến trình
+d. Quản lí mạng
+78. Thiết bị nào sau đây không là thiết bị nhập. xuất tuần tự :
+a. Màn hình
+b. Bàn phím
+c. Chuột
+d. Đĩa
+79. Vân chuyển DMA được thực hiện bởi :
+a. Bộ điều khiển thiết bị
+b. CPU
+c. Bộ nhớ trong
+d. Câu a,b là sai
+80. Ví dụ trong ngôn ngữ lập trình C câu lệnh Count = Write(fd,buffer,nbytes); thuộc phần mềm xuất nhập nào sau đây:
+a. Điều khiển thiết bị
+b. Phần mềm nhập xuất phạm vi người sử dụng 
+c. Phần mềm nhập xuất độc lập với thiết bị 
+d. Câu b,c là đúng
+81. Trong hệ thống I. O đĩa thời gian để đầu đọc đến đúng khối cần thiết trên một track gọi là :
+a. Seek time
+b. Tranfer time
+c. Latency time
+d. Không câu nào đúng
+82. Trong hệ thống I. O đĩa thời gian để đầu đọc đến đúng track cần thiết trên một đĩa gọi là :
+a. Seek time
+b. Tranfer time
+c. Latency time
+d. Không câu nào đúng
+83. Khi hệ thống phải truy xuất dữ liệu khối lượng lớn thì thuật toán lập lịch nào sau đây là hiệu quả:
+a. FCFS
+b. SSTF
+c. SCAN
+d. C-SCAN
+84. Khi hệ thống phải truy xuất dữ liệu có số khối liên tục thì thuật toán lập lịch nào sau đây là hiệu quả nhất:
+a. FCFS
+b. SSTF
+c. SCAN
+d. C-SCAN
+85. Ví dụ cần đọc các khối sau 98,183,37,122,14,122,65,67 đầu đọc tại vị trí 53, dùng thuật toán lập lịch SCAN thì đầu đọc sẽ lần lượt qua các khối có thứ tự nào sau đây:
+a. 53, 37, 14, 65, 67, 98, 122, 124, 183
+b. 53, 65, 67, 98, 122, 124, 183,37,14
+c. 53, 14, 37, 65, 67, 98, 122, 124, 183
+d. 53, 183, 124, 122, 98, 67, 65, 37, 14
+86. Ví dụ cần đọc các khối sau 98,183,37,122,14,122,65,67 đầu đọc tại vị trí 53, dùng thuật toán lập lịch C-SCAN thì đầu đọc sẽ lần lượt qua các khối có thứ tự nào sau đây:
+a. 53, 37, 14, 65, 67, 98, 122, 124, 183
+b. 53, 65, 67, 98, 122, 124, 183,14,37
+c. 53, 14, 37, 65, 67, 98, 122, 124, 183
+d. 53, 183, 124, 122, 98, 67, 65, 37, 14
+87. Ví dụ cần đọc các khối sau 98,183,37,122,14,122,65,67 đầu đọc tại vị trí 53, dùng thuật toán lập lịch FCFS thì đầu đọc sẽ lần lượt qua các khối có thứ tự nào sau đây:
+a. 53, 37, 14, 65, 67, 98, 122, 124, 183
+b. 53, 65, 67, 98, 122, 124, 183,37,14
+c. 53, 14, 37, 65, 67, 98, 122, 124, 183
+d. 53, 98, 183, 37, 122, 14, 124, 65, 67
+88. Ví dụ cần đọc các khối sau 98,183,37,122,14,122,65,67 đầu đọc tại vị trí 53, dùng thuật toán lập lịch SSTF thì đầu đọc sẽ lần lượt qua các khối có thứ tự nào sau đây:
+a. 53, 37, 14, 65, 67, 98, 122, 124, 183
+b. 53, 65, 67, 37, 14, 98,122, 124, 183
+c. 53, 14, 37, 65, 67, 98, 122, 124, 183
+d. 53, 183, 124, 122, 98, 67, 65, 37, 14
+89. Trên đĩa các sector có số hiệu liên tiếp nhau luôn nằm kế bên nhau 
+a. Đúng
+b. Sai
+c. 
+d. 
