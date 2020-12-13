@@ -1,4 +1,5 @@
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.Vector;
 import javax.swing.JOptionPane;
@@ -17,26 +18,27 @@ import javax.swing.table.DefaultTableModel;
  *
  * @author ngosi
  */
-public class GIAODIEN extends javax.swing.JFrame {
+public class LAMBAITHI extends javax.swing.JFrame {
 
     /**
-     * Creates new form GIAODIEN
+     * Creates new form LAMBAITHI
      */
     static int dem=0;
     static DefaultTableModel dtm;
     private Vector vt = null;
     private ArrayList<CAUHOI> listWh;
     private DSDAPAN listAns;
-    
-    public GIAODIEN() {
+    final File fileDAPAN = new File("database/ans.txt"); 
+    final File fileCAUHOI = new File("database/wh.txt"); 
+    public LAMBAITHI() {
         initComponents();
+        setLocationRelativeTo(null); // frame center the screen
         setExtendedState(MAXIMIZED_BOTH); 
         listWh = new ArrayList<>();
-        listWh = new DSCAUHOI().docFileWh();
+        listWh = new DSCAUHOI().docFileWh(fileCAUHOI);
         listAns = new DSDAPAN();
-        listAns.docFileAns();
+        listAns.docFileAns(fileDAPAN);
     }
-    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -71,7 +73,7 @@ public class GIAODIEN extends javax.swing.JFrame {
         jPanel6 = new javax.swing.JPanel();
         lbuser = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jPanel1.setLayout(new java.awt.BorderLayout());
 
@@ -133,7 +135,8 @@ public class GIAODIEN extends javax.swing.JFrame {
 
         btnShowAns.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         btnShowAns.setForeground(new java.awt.Color(51, 153, 255));
-        btnShowAns.setText("Hiển Thị Kết Quả");
+        btnShowAns.setIcon(new javax.swing.ImageIcon("D:\\java\\TRACNGHIEM\\img\\show.png")); // NOI18N
+        btnShowAns.setText("ĐÁP ÁN");
         btnShowAns.setActionCommand("");
         btnShowAns.setAutoscrolls(true);
         btnShowAns.addActionListener(new java.awt.event.ActionListener() {
@@ -174,8 +177,8 @@ public class GIAODIEN extends javax.swing.JFrame {
                             .addComponent(A, javax.swing.GroupLayout.PREFERRED_SIZE, 550, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addGap(192, 192, 192)
-                        .addComponent(btnShowAns, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnShowAns, javax.swing.GroupLayout.PREFERRED_SIZE, 313, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 88, Short.MAX_VALUE)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 352, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         jPanel4Layout.setVerticalGroup(
@@ -199,6 +202,7 @@ public class GIAODIEN extends javax.swing.JFrame {
 
         btnLamBai.setBackground(new java.awt.Color(0, 153, 255));
         btnLamBai.setForeground(new java.awt.Color(255, 255, 255));
+        btnLamBai.setIcon(new javax.swing.ImageIcon("D:\\java\\TRACNGHIEM\\img\\start.png")); // NOI18N
         btnLamBai.setText("LÀM BÀI");
         btnLamBai.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -207,6 +211,7 @@ public class GIAODIEN extends javax.swing.JFrame {
         });
         jPanel3.add(btnLamBai);
 
+        btnNopBai.setIcon(new javax.swing.ImageIcon("D:\\java\\TRACNGHIEM\\img\\done.png")); // NOI18N
         btnNopBai.setText("NỘP BÀI");
         btnNopBai.setEnabled(false);
         btnNopBai.addActionListener(new java.awt.event.ActionListener() {
@@ -216,6 +221,7 @@ public class GIAODIEN extends javax.swing.JFrame {
         });
         jPanel3.add(btnNopBai);
 
+        btnExit.setIcon(new javax.swing.ImageIcon("D:\\java\\TRACNGHIEM\\img\\exit.png")); // NOI18N
         btnExit.setText("THOÁT");
         btnExit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -226,7 +232,7 @@ public class GIAODIEN extends javax.swing.JFrame {
 
         jPanel5.setLayout(new java.awt.GridLayout(1, 0));
 
-        btnPrev.setText("TRỞ VỀ");
+        btnPrev.setIcon(new javax.swing.ImageIcon("D:\\java\\TRACNGHIEM\\img\\prev.png")); // NOI18N
         btnPrev.setEnabled(false);
         btnPrev.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -239,7 +245,7 @@ public class GIAODIEN extends javax.swing.JFrame {
         lbPos.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jPanel5.add(lbPos);
 
-        btnNext.setText("QUA CÂU");
+        btnNext.setIcon(new javax.swing.ImageIcon("D:\\java\\TRACNGHIEM\\img\\next.png")); // NOI18N
         btnNext.setEnabled(false);
         btnNext.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -321,10 +327,10 @@ public class GIAODIEN extends javax.swing.JFrame {
         int count = dem + 1;
         lbPos.setText(String.valueOf(count) +"/20");
         String cauhoi = listWh.get(dem).getCauhoi();
-        String dapAnA = listWh.get(dem).getDapAn1();
-        String dapAnB = listWh.get(dem).getDapAn2();
-        String dapAnC = listWh.get(dem).getDapAn3();
-        String dapAnD = listWh.get(dem).getDapAn4();
+        String dapAnA = listWh.get(dem).getDapanA();
+        String dapAnB = listWh.get(dem).getDapanB();
+        String dapAnC = listWh.get(dem).getDapanC();
+        String dapAnD = listWh.get(dem).getDapanD();
         lbcauhoi.setText(cauhoi);
         A.setText(dapAnA);
         B.setText(dapAnB);
@@ -339,10 +345,10 @@ public class GIAODIEN extends javax.swing.JFrame {
         int count = dem + 1;
         lbPos.setText(String.valueOf(count) +"/20");
         String cauhoi = listWh.get(dem).getCauhoi();
-        String dapAnA = listWh.get(dem).getDapAn1();
-        String dapAnB = listWh.get(dem).getDapAn2();
-        String dapAnC = listWh.get(dem).getDapAn3();
-        String dapAnD = listWh.get(dem).getDapAn4();
+        String dapAnA = listWh.get(dem).getDapanA();
+        String dapAnB = listWh.get(dem).getDapanB();
+        String dapAnC = listWh.get(dem).getDapanC();
+        String dapAnD = listWh.get(dem).getDapanD();
         lbcauhoi.setText(cauhoi);
         A.setText(dapAnA);
         B.setText(dapAnB);
@@ -364,7 +370,7 @@ public class GIAODIEN extends javax.swing.JFrame {
     }//GEN-LAST:event_CActionPerformed
 
     private float sumPoint(){
-        float point = 1.0f;
+        float point = 0;
         final float hesoPoint = 0.5f;
         int pos=0; 
         try {
@@ -393,7 +399,7 @@ public class GIAODIEN extends javax.swing.JFrame {
             
         } catch (NullPointerException | StringIndexOutOfBoundsException ex1) {
         }
-        return point-1.0f;
+        return point;
     }
     private void btnNopBaiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNopBaiActionPerformed
             float diem = sumPoint();
@@ -403,7 +409,7 @@ public class GIAODIEN extends javax.swing.JFrame {
                   this.dispose();
                   java.awt.EventQueue.invokeLater(new Runnable() {
                   public void run() {
-                  new GIAODIEN().setVisible(true);   
+                  new LAMBAITHI().setVisible(true);   
             }
         });
               }
@@ -433,44 +439,41 @@ public class GIAODIEN extends javax.swing.JFrame {
     /**
      * @param args the command line arguments
      */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-           
-            
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(GIAODIEN.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(GIAODIEN.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(GIAODIEN.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(GIAODIEN.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        
-       
-        
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new GIAODIEN().setVisible(true);
-               
-            }
-        });
-       
-    }
+//    public static void main(String args[]) {
+//        /* Set the Nimbus look and feel */
+//        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+//        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+//         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+//         */
+//        try {
+//            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+//                if ("Nimbus".equals(info.getName())) {
+//                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+//                    break;
+//                }
+//            }
+//           
+//            
+//        } catch (ClassNotFoundException ex) {
+//            java.util.logging.Logger.getLogger(LAMBAITHI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//        } catch (InstantiationException ex) {
+//            java.util.logging.Logger.getLogger(LAMBAITHI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//        } catch (IllegalAccessException ex) {
+//            java.util.logging.Logger.getLogger(LAMBAITHI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+//            java.util.logging.Logger.getLogger(LAMBAITHI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//        }
+//        //</editor-fold>
+//
+//        //</editor-fold>
+//
+//        /* Create and display the form */
+//        
+//       
+//        
+//        
+//       
+//    }
     
     
     // Variables declaration - do not modify//GEN-BEGIN:variables

@@ -6,7 +6,7 @@
     </Component>
   </NonVisualComponents>
   <Properties>
-    <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="defaultCloseOperation" type="int" value="2"/>
   </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
@@ -153,10 +153,10 @@
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="192" max="-2" attributes="0"/>
-                          <Component id="btnShowAns" min="-2" pref="160" max="-2" attributes="0"/>
+                          <Component id="btnShowAns" min="-2" pref="313" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <EmptySpace max="32767" attributes="0"/>
+                  <EmptySpace pref="88" max="32767" attributes="0"/>
                   <Component id="jScrollPane2" min="-2" pref="352" max="-2" attributes="0"/>
               </Group>
           </Group>
@@ -244,7 +244,10 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="99" red="33" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Hi&#x1ec3;n Th&#x1ecb; K&#x1ebf;t Qu&#x1ea3;"/>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="2" name="D:\java\TRACNGHIEM\img\show.png"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="&#x110;&#xc1;P &#xc1;N"/>
             <Property name="actionCommand" type="java.lang.String" value=""/>
             <Property name="autoscrolls" type="boolean" value="true"/>
           </Properties>
@@ -336,6 +339,9 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="2" name="D:\java\TRACNGHIEM\img\start.png"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="L&#xc0;M B&#xc0;I"/>
           </Properties>
           <Events>
@@ -344,6 +350,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="btnNopBai">
           <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="2" name="D:\java\TRACNGHIEM\img\done.png"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="N&#x1ed8;P B&#xc0;I"/>
           </Properties>
           <Events>
@@ -355,6 +364,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="btnExit">
           <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="2" name="D:\java\TRACNGHIEM\img\exit.png"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="THO&#xc1;T"/>
           </Properties>
           <Events>
@@ -375,7 +387,9 @@
       <SubComponents>
         <Component class="javax.swing.JButton" name="btnPrev">
           <Properties>
-            <Property name="text" type="java.lang.String" value="TR&#x1ede; V&#x1ec0;"/>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="2" name="D:\java\TRACNGHIEM\img\prev.png"/>
+            </Property>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnPrevActionPerformed"/>
@@ -394,7 +408,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="btnNext">
           <Properties>
-            <Property name="text" type="java.lang.String" value="QUA C&#xc2;U"/>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="2" name="D:\java\TRACNGHIEM\img\next.png"/>
+            </Property>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnNextActionPerformed"/>

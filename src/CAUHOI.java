@@ -1,12 +1,18 @@
 
+import java.io.BufferedOutputStream;
+import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.FileWriter;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JOptionPane;
 import javax.swing.JRadioButton;
 
 
@@ -22,10 +28,10 @@ import javax.swing.JRadioButton;
 class CAUHOI implements Serializable {
     private int id_wh;
     private String cauhoi;
-    private String dapAn1;
-    private String dapAn2;
-    private String dapAn3;
-    private String dapAn4;
+    private String dapanA;
+    private String dapanB;
+    private String dapanC;
+    private String dapanD;
     private javax.swing.JRadioButton dapAnUser = new javax.swing.JRadioButton();
     private static final long serialVersionUID = -6849794470754667710L;
     
@@ -36,10 +42,10 @@ class CAUHOI implements Serializable {
     public CAUHOI(int id_wh, String cauhoi, String dapAn1, String dapAn2, String dapAn3, String dapAn4) {
         this.cauhoi = cauhoi;
         this.id_wh = id_wh;
-        this.dapAn1 = dapAn1;
-        this.dapAn2 = dapAn2;
-        this.dapAn3 = dapAn3;
-        this.dapAn4 = dapAn4;
+        this.dapanA = dapAn1;
+        this.dapanB = dapAn2;
+        this.dapanC = dapAn3;
+        this.dapanD = dapAn4;
     }
 
    public JRadioButton getDapAnUser() {
@@ -61,42 +67,41 @@ class CAUHOI implements Serializable {
         return cauhoi;
     }
 
-    public String getDapAn1() {
-        return dapAn1;
+    public String getDapanA() {
+        return dapanA;
     }
 
-    public String getDapAn2() {
-        return dapAn2;
+    public String getDapanB() {
+        return dapanB;
     }
 
-    public String getDapAn3() {
-        return dapAn3;
+    public String getDapanC() {
+        return dapanC;
     }
 
-    public String getDapAn4() {
-        return dapAn4;
+    public String getDapanD() {
+        return dapanD;
     }
 
     public void setCauhoi(String cauhoi) {
         this.cauhoi = cauhoi;
     }
 
-    public void setDapAn1(String dapAn1) {
-        this.dapAn1 = dapAn1;
+    public void setDapanA(String dapanA) {
+        this.dapanA = dapanA;
     }
 
-    public void setDapAn2(String dapAn2) {
-        this.dapAn2 = dapAn2;
+    public void setDapanB(String dapanB) {
+        this.dapanB = dapanB;
     }
 
-    public void setDapAn3(String dapAn3) {
-        this.dapAn3 = dapAn3;
+    public void setDapanC(String dapanC) {
+        this.dapanC = dapanC;
     }
 
-    public void setDapAn4(String dapAn4) {
-        this.dapAn4 = dapAn4;
+    public void setDapanD(String dapanD) {
+        this.dapanD = dapanD;
     }
-
 }
 
 class DAPAN implements Serializable{
@@ -136,21 +141,24 @@ class DSCAUHOI {
     public DSCAUHOI() {
         list = new ArrayList<>();
     }
-
-    public ArrayList<CAUHOI> docFileWh() {
+    public void add(CAUHOI ch) {
+        list.add(ch);
+    }
+    
+    public ArrayList<CAUHOI> docFileWh(File file) {
         ArrayList<CAUHOI> listCauHoi = new ArrayList<>();
         try {
             //  DataOutputStream DIS = new DataOutputStream(new BufferedOutputStream(new FileOutputStream("cauhoi.txt")));
             CAUHOI wh = null;
-            Scanner sc = new Scanner(new FileInputStream("wh.txt"), "UTF-8");
+            Scanner sc = new Scanner(new FileInputStream(file), "UTF-8");
             while (sc.hasNext()) {
                wh = new CAUHOI();
                wh.setId_wh(Integer.parseInt(sc.next().replace('.', ' ').trim()));
                wh.setCauhoi(sc.nextLine());
-               wh.setDapAn1(sc.nextLine());
-               wh.setDapAn2(sc.nextLine());
-               wh.setDapAn3(sc.nextLine());
-               wh.setDapAn4(sc.nextLine());
+               wh.setDapanA(sc.nextLine());
+               wh.setDapanB(sc.nextLine());
+               wh.setDapanC(sc.nextLine());
+               wh.setDapanD(sc.nextLine());
                list.add(wh);
             }
             Collections.shuffle(list);
@@ -164,7 +172,25 @@ class DSCAUHOI {
         }
         return listCauHoi;
     }
-
+    public void ghiFile(File file){
+        try {
+            BufferedWriter bw = new BufferedWriter(new FileWriter("database/".concat(file.toString())));
+            int length = list.size();
+            for(int i=0;i<length;i++){
+                list.get(i).setId_wh(i+1);
+                bw.write(String.valueOf(i+1));
+                bw.write(".");
+                bw.write(" ");
+                bw.write(list.get(i).getCauhoi() + '\n');
+                bw.write(list.get(i).getDapanA() + '\n');
+                bw.write(list.get(i).getDapanB() + '\n');
+                bw.write(list.get(i).getDapanC() + '\n');
+                bw.write(list.get(i).getDapanD() + '\n');
+            }
+            bw.close();
+        } catch (Exception e) {
+        }
+    }
 }
 class DSDAPAN{
     private ArrayList<DAPAN> listDapAn;
@@ -177,10 +203,15 @@ class DSDAPAN{
         return listDapAn;
     }
     
-    public void docFileAns(){
+    public void add(DAPAN da) {
+        if(this.Search(da.getIdAns()) != -1){
+            return;
+        }
+    }
+    public void docFileAns(File file){
         DAPAN ans = null;
         try {
-            Scanner sc = new Scanner(new FileInputStream("ans.txt"), "UTF-8");
+            Scanner sc = new Scanner(new FileInputStream(file), "UTF-8");
             while (sc.hasNext()) {
                ans = new DAPAN();
                ans.setIdAns(Integer.parseInt(sc.next()));
@@ -203,5 +234,19 @@ class DSDAPAN{
         }
         return -1;
     }
-    
+    public void ghiFile(File file){
+        try {
+            BufferedWriter bw = new BufferedWriter(new FileWriter("database/".concat(file.toString())));
+            int length = listDapAn.size();
+            for(int i=0;i<length;i++){
+                listDapAn.get(i).setIdAns(i+1);
+                bw.write(String.valueOf(i+1));
+                bw.write(" ");
+                bw.write(listDapAn.get(i).getDapAnDung());
+                bw.write('\n');
+            }
+            bw.close();
+        } catch (Exception e) {
+        }
+    }
 }
